@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #symbol img{
+            height: 20vh;
+           
+            align-items: center;
+        }
+        header{
+            display: flex;
+            justify-content: space-around;
+        }
+        #line {
+      border: none; /* Removes the default border */
+      height: 2px;  /* Sets the thickness of the line */
+      background-color:#D2665A;
+    opacity: 0.3;}
+    #box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(210, 210, 210);
+        width: 40%;
+        height: 50px;
+        color: rgb(7, 12, 17);
+        border-radius: 50px;
+        text-align: center;
+        
+    }
+    #about{
+        font-size: xx-large;
+      text-decoration: none;
+        color:#B82132;
+        
+    }
+    #p{
+  font-family: "Dancing Script", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+#spe{
+    text-decoration: none;
+    color: #D2665A;
+    font-family: "Dancing Script", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+body{
+    background-color: #ffffff;
+    ;
+}
+#pic img{
+  
+    width: 100%; 
+     
+      display: block;
+      object-fit: contain;
+}
+sub{
+    color: #5846;
+}
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div style="color:#B82132; font-size: xx-large;">MENU</div>
+        
+       <center> <div id="symbol"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAAe1BMVEX///8PDw8AAADl5eXw8PB8fHx/f3/e3t6Tk5NiYmKJiYkICAj19fUHBwft7e37+/ufn59dXV24uLjJycnR0dHa2tpFRUVsbGyqqqpxcXGampq+vr4WFhavr68iIiIdHR1NTU09PT02NjYpKSmOjo5TU1NISEg/Pz8vLy8mz02dAAAJQUlEQVR4nO1d6XriMAwM5iYQKKRchXK0tLz/Ey4OlyUfObxJsOr5t03CxvPZijSW5CDw8PDw8PDw8PDw8PDw8CgH47ibD81oOK77pWvDlBXA7mfxvY2Hdb979Rj+skZehFfOwsWyW/frV423/Gw9OWt04rrfv1oUmFsiYZvJX7JiQwuyrnwN/pD9Wtqx1WgwNql7DNVhE1qy1WBff8bWT/DUMnoOSmYZW9Y9iooQIbJYS4mo+T7b9hafasLYqu5hVIQdHDwz3z2cDS4zSWbrVM3L1o02y0MWR7yS6WL70l/0FTDJTVYQtNoSXeyt7Bd9BXwUICsImgeJrUG57/kSiAuRFQQ9ia2PMl/zNdAsSBaekvxDWuJrvgYKk4Xn5F8w8iqy3vdvfSPevvltM8zWtN6hlA/lzIqOaSpg4lihL2mYPLxs1jiakqFZhquUCJv98LtO6OFJ8iRbfRCVbnQ2K5Wt/uWmlmJqdRmXBhez+oZUHrQGfp7GFg+fkQORWK0j/xtjO4LhtZasVprUxV2FMXqaL86bRnaZX9v6hlUO9K7Dd9rU4lrDAD0eCUJGyM7vtY2rFOjJkjTnEf4kRtxCwcf52juPHv9kvdoGVgYMTmkfXhodsLfFl9nXCDzO42lxttESbwxkTdGltep5vA4DFAixM6EtDQNZ+JJySWHVooufYxs6bJliwyxkIV060R7Qn3ZkXFQTWVC00hhrxVqFdqzBDlUMpAqYyFpkIesMLXzn8qc9jrCpbGiYyFplIQsywxYBlyPQFhAVPcJEVicLWdDBuGrxXQYXYoPRMPImsgZZyFooyMK/eg273Yc1WWhm3ViRZFQS+UnWZJ1km8WxRr97LHsgVcCarCP8Gj52xNBmGaMgcFmTpRBLE+AQ+6fkgVQBW7KQ7CXsHqI4nBHQ5m3JQls87Jms9Y6ufJc8kgpgSxY25MIlaLXCXanjqAS2ZEGpHmy0LsmtQ0uysMkSNS/80+7vYFiShWcPyC9tgBCRQDhtSRZUY0af4CKMhNBFF2FHFv4WQuW5SKLcS8OOLOymw6wjLDlHpY6kAliRhdlAVgknyjm/i2hFFhL5sHOAIx7nlQcbshbo2Ta6jjcz/jJZW6xZYTnUk/WApO9JTidehn/XZjWxwdpLv40NvPMVUUXJ6iKuQsWeBP5YOr9rUZAsebdLYZC8U5pArrxTRclo3/G35KGUjyJkjaVKdLV8Ays/k81qt5GVLPYs8J3KZU7Kwh3sObi/LZ2JrAtTx8kt7uvOpfpMzVYGlm+cDw1TyUryIfvb+0C7fWlahTpV7wcqNF8lj6QCmMli7NDZPt2j2UlRl6lzzDPlwrkFE1mzDzEybq43qorfX10xWAf9svsSfNaqsO76qKolN6Qjo2Rn8pusN3S3C264JKYu1uqgny6onoX89n0QxdvO3NDQwVBCgbZYKZh3mayo2ezGs+mk1z59XksDVDyZVyDHJ8orpTCx5LSzlP4gj/sWxp/Fi3BfzWhKBiYrM4yCC24IROFTGFiQpdJk7sDF5lRaIeUiCxgwvYogcUXBbeDISlbS7W8P5AZd3wuszY/cV/1uSCfr1hSxP4nHaFdV/Ynr4F90X06+Q0tW+Pgq7jvL+B7TDMVvZMjkqpxI6iNIw2tIoHUdPn/77d521kV8gOwGOb19KWtdhNquYKf0nfe6banquFrXzz/oIYWYiI+yfkOIq2yBdDSbLHb3pNANWIjCXd03eVq5v7EqwkxWFE/Xq8PVn7+HN2A38CmsK7WujfvqqAgTWW0mRoePWBCkOFx982iyU2ldNCp2nihQFQaUqiTqa6q1LveTSBGKlNCtJWdrIU2rkO1pLUGOQvWGI2EesXMgd/C8TCv3N75k5CDrmjDK5wsIaBJasCRDJRqEyE5WeD58bdjVGdgJ0t6Il05IzWEpTqwcZF3MEF9+SS39VJpa2Gq5n4ylQA6y7rdwiy5arURfR4lrRrnLWRQgax6gNJqEvhPS6+l0c3giP1nXFSbJgHF7NgahoZSP6z6KkMUdc5COdDdQQMAhpTdcUYCsJB8GPPeoFoBZpOTMVg6yns3GePQMcmQetEDnnlTzrCAPWaPfdmfQmyyns5gHz9B7eGzfgGJNal3/cnvwD4gXR4+a3hblhVi8Fw2IcJ4iH9hfJSbSFCdrpjTxeCHS2a0IrLocMfWDTfX6pAALsuA6fDpVA7XpJwALsj401mkMXVMyHf+syIK9ggVSoI0ndLiFTWc2aMoFBQuUVhA6rsGGrJ7OS4AOK52A2oasWPM9hEoqoall1SARXhdcKijSu1/hdIMVWXMtJyNgtagEPVZkAY8q3AhXoJJKoBIlgRVZsK+3mGUL3IqQSU+6CSuy4C4F2K4Hz1KRauw64MIbxJPoAI80Gm/akoXOGRAvgXRJIruIdmSh9rciJdB7cL/RGIcdWajkXFQYtJGjw7AjC7YsgLpon56JtyNra3gaKjjzcodRDXDrVXG5pJOFD1AR65nQOqSQ2oa79oljyk8WSDSCtSsUFFO8kMQPWv5l2NZeJOFqfRvmRl4Dj1oCwwQ3CiWH+DxHUQROJwtnQ8CaJlD6S2EdotGCwu90sk6YLHAPjA/db3KED6EFqyVnbNjA+gIs0nRfMJWbOwnrMJWsd/w0tHnIaLnulyqqDQVPK5Us6Zhy1L8hBHqpuV7/9YEPqmqAmDeVrI2iCEUUtVCcXcGASoTUjS4Z02MjPo0s6UT35DbBNMFjCNwup1MOVnBM08hCXUFut811/4H6NElHgKvk7wjvm1opZMkW63rf041Hx0LuKxvaf8fCcFr79ZNoJitOeTqQT06udHz/EcP2qq3HKhmvkayx/vnn8eToYAanjVYK2qlOaRrQ2ZsEIh4tUFPWAqcMQZ8XbP9QAzq6sEA2zBsRo5UBc+t5gcki02hFBhKrChwF84PIIldi/gA6ranIdtYutWc8FUhtsPLntEuahvMyjQ5tTFbuVFpc3krYeTAre1kgBVThqIwXfQHIoWPuknpJWnRfAdQglMQqkNuXAUM50iaT1wahKmPNabXW9j/hBqZK/SVX2fNY/RP0ommNLpiLrZXyN+g1fFAtoBtbmeVOLd/nMt+8cjTPBl2QHbPtw+u1QfZFIrPthihqGRBlSx6iRIiHh4eHh4eHh4eHh4eHO/gHwFNpZMJmHp0AAAAASUVORK5CYII=" alt=""></div>
+       </center>
+       <div style="color:#B82132; font-size: xx-large;">DEALERS</div>
+    
+    </header>
+    <hr id="line">
+
+    <div><center>
+        <article id="spe">
+            <h1>SPECTRE</h1>
+            <H2>BEYOND DESIRE</H2>
+            <div id="box" ><a href=#picc >DISCOVER NOW</a></div>
+        </article></center>
+    </div>
+    <hr id="line">
+
+    <div>
+        <a href="https://www.rolls-royce.com/about.aspx#/" id="about"  target="_blank">ABOUT <sub id="sub">click here</sub> </a>
+        <p id="p">Skip to main content
+            About
+            Rolls-Royce – link to home page
+            Menu
+            
+            Rolls-Royce
+            
+            Powering, protecting and connecting the modern world
+            
+            PLAY VIDEO
+            Our strategic framework
+            About Rolls-Royce
+            We’ve been at the forefront of innovation for more than a hundred years, helping to power, protect and connect the modern world
+            
+            Today, we’re working on a multi-year transformation to unlock our full potential. We’re building on our enduring, distinctive strengths to create a high-performing, competitive, resilient and growing Rolls-Royce. We will continue to design, build and maintain systems that provide mission-critical power to customers.
+            
+            
+            The Rolls-Royce proposition
+            Build a high-performing, competitive and resilient business with profitable growth.
+            Grow sustainable free cash flow.
+            Build a strong balance sheet and grow shareholder returns.
+            Delivering the proposition will make us a stronger partner to our customers as they face future challenges and opportunities. We will unlock our full potential by turning engineering excellence into strong financial performance.
+            
+            To implement our strategy, we will be disciplined, agile and systematic. We will continue to have a tight focus on priorities, improve commercial discipline and seek efficiency in every step, whilst never compromising on integrity or safety. We will put the business on a stronger financial footing by delivering a sustainable reduction in working capital, higher operating margins and improved operational performance.
+            
+            Improving profitability will give us options to grow the business and enhance shareholder returns. This performance shift is also crucial to creating more opportunities for our people to be part of an energising, rewarding and world-leading team.
+            
+            
+            Where we’re going
+            Our leadership team made a public announcement about where we’re going and our plans for getting there, at our Capital Markets Day on 28 November 2023. Watch the recording, browse our Virtual Exhibition, and download presentations from the day.
+            
+            Learn more 
+            
+            Our businesses
+            We have a differentiated position with a strong portfolio of products and technologies in attractive markets. Our core operating businesses cover:
+            
+            Civil Aerospace
+            Defence
+            Power Systems
+            
+            Our strategic framework
+            Our near-term focus areas and strategic priorities are informed by our business environment. Our strategy is delivered by our people, enabled by our business model, enacted by our business units and measured through our KPIs. It’s underpinned by strong governance and leadership, which manages risk and uncertainty, and creates value for all our stakeholders.
+            
+            Learn more 
+            
+            Our company
+            Our business in 2023
+            underlying revenue by business in 2023
+            
+            Underlying revenue
+            £15,409m
+            
+            Underlying profit before tax
+            £1,262m
+            
+            Free cash flow
+            £1,285m
+            
+            Order backlog
+            £68.5bn
+            
+            Gross R&D expenditure
+            £1.4bn
+            
+            Liquidity
+            £7.2bn
+            
+            Underlying earnings per share
+            13.75p
+            
+            Employees
+            41,400
+            
+            Countries
+            48
+            
+            Civil aerospace48%Defence26%Power Systems26%
+            
+            Inside Rolls-Royce
+            
+            Leadership
+            
+            Our Board and Executive Team
+            
+            
+            Where we operate
+            
+            Find out details of our global presence
+            
+            
+            Our Research
+            
+            Find out more about how we structure our research
+            
+            
+            Our History
+            
+            Our company was founded in 1906: use our timeline to discover our key milestones
+            
+            The Rolls-Royce Heritage Trust
+            The Rolls-Royce Heritage Trust promotes the history and engineering excellence of Rolls-Royce and its ancestral companies.
+            
+            Learn more 
+            A force for progress;
+            powering, protecting and connecting people everywhere.
+            
+            
+            
+            
+            
+            
+            
+            © Rolls-Royce plc 2025. All rights reserved.
+            
+            Home
+            Innovation
+            Products & Services
+            About
+            Sustainability
+            Investors
+            Media
+            Careers
+            Products & Services
+            Civil Aerospace
+            Defence
+            Power Systems
+            Electrical Aviation
+            Follow Us
+                 
+            Stay in Touch
+            Sign up to get the latest news
+            
+            Contact us
+            
+            Vulnerability Reporting
+            
+            Rolls-Royce
+            
+            Site map
+            Use of cookies
+            Cookie Settings
+            Legal information
+            Data privacy
+            Anti-slavery statement</p>
+    </div>
+
+<center>
+    <div id="picc"><img src="data:image/png;base64,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" alt="">
+    </div>
+</center>
+<div id="pic" >
+
+
+ <img src="https://4kwallpapers.com/images/walls/thumbs_2t/15866.jpg" alt="">
+    <img src="https://images.pexels.com/photos/3764984/pexels-photo-3764984.jpeg" alt="">
+<img src="https://4kwallpapers.com/images/walls/thumbs_2t/3597.jpeg" alt="">
+    <img src="https://4kwallpapers.com/images/walls/thumbs_2t/6367.jpg" alt="">
+<img src="" alt="">
+
+
+</div>
+    
+</body>
+</html>
+
+
